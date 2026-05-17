@@ -321,12 +321,9 @@ Books,507514,98           ← Lowest revenue despite 98 orders
 
 ---
 
-## 👥 Authors
+## Author
 
-| Name | Roll No | Program |
-|---|---|---|
-| **Eshwar G** | 2582420 | MSDA — 3rd Trimester |
-| **Shivani R** | — | MSDA — 3rd Trimester |
+**Eshwar G**
 
 ---
 
