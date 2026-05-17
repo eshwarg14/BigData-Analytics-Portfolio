@@ -13,29 +13,12 @@ import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 
-/**
- * ReviewPartitioner
- *
- * Hadoop MapReduce job that performs product-level sentiment partitioning.
- * Reviews mentioning "damaged" are routed to Reducer 0 (part-r-00000).
- * Reviews mentioning "good"    are routed to Reducer 1 (part-r-00001).
- *
- * This enables parallel, separated analysis of negative vs positive feedback
- * across all electronic products in the dataset.
- *
- * Input format:  ProductName,Review Text
- * Output:        Two files — one for "damaged" counts, one for "good" counts.
- */
 public class ReviewPartitioner {
 
-    // ─────────────────────────────────────────────────────────────
-    //  MAPPER
-    //  Emits compound key: "<ProductName>_damaged" or "<ProductName>_good"
-    // ─────────────────────────────────────────────────────────────
     public static class ReviewMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
 
-        private final Text    compoundKey = new Text();
-        private final IntWritable one     = new IntWritable(1);
+        private final Text compoundKey = new Text();
+        private final IntWritable one = new IntWritable(1);
 
         @Override
         public void map(LongWritable key, Text value, Context context)
@@ -45,7 +28,7 @@ public class ReviewPartitioner {
 
             if (cols.length >= 2) {
                 String product = cols[0].trim();
-                String review  = cols[1].trim();
+                String review = cols[1].trim();
 
                 if (review.contains("damaged")) {
                     compoundKey.set(product + "_damaged");
@@ -58,10 +41,6 @@ public class ReviewPartitioner {
         }
     }
 
-    // ─────────────────────────────────────────────────────────────
-    //  REDUCER
-    //  Sums counts for each (ProductName_sentiment) key
-    // ─────────────────────────────────────────────────────────────
     public static class ReviewReducer extends Reducer<Text, IntWritable, Text, IntWritable> {
 
         private final IntWritable result = new IntWritable();
@@ -79,12 +58,6 @@ public class ReviewPartitioner {
         }
     }
 
-    // ─────────────────────────────────────────────────────────────
-    //  CUSTOM PARTITIONER
-    //  Routing strategy:
-    //    Reducer 0 ← keys ending with "_damaged"
-    //    Reducer 1 ← all other keys (i.e., "_good")
-    // ─────────────────────────────────────────────────────────────
     public static class SentimentPartitioner extends Partitioner<Text, IntWritable> {
 
         @Override
@@ -94,9 +67,6 @@ public class ReviewPartitioner {
         }
     }
 
-    // ─────────────────────────────────────────────────────────────
-    //  DRIVER
-    // ─────────────────────────────────────────────────────────────
     public static void main(String[] args) throws Exception {
 
         if (args.length != 2) {
@@ -109,23 +79,18 @@ public class ReviewPartitioner {
 
         job.setJarByClass(ReviewPartitioner.class);
 
-        // Mapper, Reducer, Partitioner
         job.setMapperClass(ReviewMapper.class);
         job.setReducerClass(ReviewReducer.class);
         job.setPartitionerClass(SentimentPartitioner.class);
 
-        // Two reducers → two output files
         job.setNumReduceTasks(2);
 
-        // Output types
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
 
-        // Formats
         job.setInputFormatClass(TextInputFormat.class);
         job.setOutputFormatClass(TextOutputFormat.class);
 
-        // Paths
         FileInputFormat.setInputPaths(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
 
