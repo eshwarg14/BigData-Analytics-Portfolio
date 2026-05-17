@@ -454,7 +454,7 @@ Start with **Project 1** for MapReduce fundamentals, then progress through join 
 ```
 MIT License
 
-Copyright (c) 2024 Eshwar G & Shivani R
+Copyright (c) 2026 Eshwar G
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
