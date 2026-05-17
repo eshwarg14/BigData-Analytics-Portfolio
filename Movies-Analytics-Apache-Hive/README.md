@@ -407,12 +407,9 @@ KGF Chapter 2      | Action     | 8.2 | Prashanth Neel     | Indian
 
 ---
 
-## 👥 Authors
+## Author
 
-| Name | Roll No | Program |
-|---|---|---|
-| **Eshwar G** | 2582420 | MSDA — 3rd Trimester |
-| **Shivani R** | — | MSDA — 3rd Trimester |
+**Eshwar G**
 
 ---
 
