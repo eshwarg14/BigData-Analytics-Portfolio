@@ -1,0 +1,53 @@
+# ── Java ──────────────────────────────────────────────────────
+*.class
+*.jar
+*.war
+*.ear
+target/
+
+# ── Python ────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env312/
+*.egg-info/
+dist/
+build/
+
+# ── Hadoop / MapReduce ────────────────────────────────────────
+hadoop_tmp/
+hadoop-*-logs/
+*.log
+derby.log
+metastore_db/
+
+# ── Hive ──────────────────────────────────────────────────────
+hive-site.xml
+warehouse/
+
+# ── IDE ───────────────────────────────────────────────────────
+.eclipse/
+.idea/
+*.iml
+*.iws
+*.ipr
+.project
+.classpath
+.settings/
+eclipse-workspace/
+
+# ── OS ────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Misc ──────────────────────────────────────────────────────
+*.tmp
+*.bak
+*.swp
+*.swo

@@ -1,0 +1,41 @@
+ProductName,Review
+Sony Bravia 43 inch Smart TV,Sound quality is amazing
+Sony WH-1000XM4 Headphones,Not satisfied with the product
+Apple iPhone 13,Highly recommended
+HP DeskJet 2331 Printer,Packaging was damaged but product works
+Samsung Galaxy M14,Satisfied with the purchase
+Samsung Galaxy M14,Value for money product
+Boat Rockerz 450 Headphones,Item was damaged on delivery
+Dell Inspiron 15 Laptop,Satisfied with the purchase
+Canon EOS 1500D DSLR,Display quality is very good
+Canon EOS 1500D DSLR,Screen damaged and not usable
+Sony WH-1000XM4 Headphones,Delivery was late and product damaged
+Realme Narzo 60,Not satisfied with the product
+Mi 10000mAh Power Bank,Delivery was late and product damaged
+JBL Flip 5 Bluetooth Speaker,Poor build quality
+Samsung Galaxy M14,Display quality is very good
+HP Pavilion 14 Laptop,Not satisfied with the product
+Realme Narzo 60,Worth the money
+Dell Inspiron 15 Laptop,Worth the money
+Canon EOS 1500D DSLR,Worth the money
+Boat Rockerz 450 Headphones,Good for daily use
+Lenovo IdeaPad Slim 3,Product looks premium
+Sony WH-1000XM4 Headphones,Packaging was damaged but product works
+Boat Rockerz 450 Headphones,Poor build quality
+Samsung Galaxy M14,Heating issue after few days
+Mi 10000mAh Power Bank,Highly recommended
+JBL Flip 5 Bluetooth Speaker,Satisfied with the purchase
+Canon EOS 1500D DSLR,Very poor quality product
+Amazon Basics Keyboard,Worst experience ever
+Samsung 253L Refrigerator,Worth the money
+Samsung 253L Refrigerator,Heating issue after few days
+Asus VivoBook 15,Highly recommended
+HP Pavilion 14 Laptop,Delivery was late and product damaged
+Boat Rockerz 450 Headphones,Good for daily use
+LG 7kg Washing Machine,Packaging was damaged but product works
+TP-Link Archer C6 Router,Average performance for the price
+Redmi Note 12,Screen damaged on arrival
+JBL Flip 5 Bluetooth Speaker,Item was damaged in transit
+Dell Inspiron 15 Laptop,Product was damaged when delivered
+OnePlus Nord CE,Not satisfied with the product
+Realme Narzo 60,Screen damaged and cracked

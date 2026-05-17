@@ -1,0 +1,41 @@
+order_id,customer_id,product,category,price_rs,quantity,order_date,order_hour
+1,C090,Coffee Maker,Kitchen,4999,1,2024-03-05,2
+2,C093,iPhone 15,Electronics,82999,3,2024-03-25,13
+3,C007,Blender,Kitchen,3299,3,2024-07-30,21
+4,C080,Protein Powder,Sports,3299,5,2024-08-20,19
+5,C064,Knife Set,Kitchen,3799,1,2024-07-14,2
+6,C091,Resistance Bands,Sports,1699,1,2024-12-03,5
+7,C031,Adidas Cap,Fashion,2199,3,2024-10-15,11
+8,C027,Laptop Dell,Electronics,69999,3,2024-12-28,9
+9,C040,Yoga Mat,Sports,2499,1,2024-02-23,8
+10,C022,Python Crash Course,Books,2499,2,2024-04-21,17
+11,C014,Instant Pot,Kitchen,6599,3,2024-06-27,4
+12,C023,Dumbbells,Sports,4199,4,2024-04-24,15
+13,C030,Air Fryer,Kitchen,7499,3,2024-10-22,10
+14,C098,Blender,Kitchen,3299,4,2024-09-19,0
+15,C001,Yoga Mat,Sports,2499,5,2024-06-23,9
+16,C042,H&M T-Shirt,Fashion,1699,3,2024-04-23,15
+17,C020,Clean Code,Books,2999,3,2024-09-18,7
+18,C023,Dumbbells,Sports,4199,1,2024-12-16,16
+19,C052,Dumbbells,Sports,4199,2,2024-06-05,13
+20,C024,iPad Air,Electronics,61999,1,2024-04-30,18
+21,C082,Protein Powder,Sports,3299,5,2024-04-17,12
+22,C086,Instant Pot,Kitchen,6599,3,2024-06-06,5
+23,C068,Laptop Dell,Electronics,69999,1,2024-09-19,19
+24,C016,The Alchemist,Books,999,1,2024-02-07,19
+25,C050,Adidas Cap,Fashion,2199,1,2024-05-24,5
+26,C028,iPad Air,Electronics,61999,3,2024-09-06,15
+27,C091,The Alchemist,Books,999,2,2024-04-06,9
+28,C035,H&M T-Shirt,Fashion,1699,3,2024-02-06,5
+29,C034,Dumbbells,Sports,4199,5,2024-02-02,2
+30,C023,H&M T-Shirt,Fashion,1699,5,2024-10-11,9
+31,C044,Samsung TV,Electronics,54999,2,2024-11-15,13
+32,C055,Levi Jeans,Fashion,3499,4,2024-03-18,7
+33,C062,Harry Potter,Books,799,3,2024-06-12,21
+34,C071,Nike Shoes,Fashion,4999,2,2024-08-07,14
+35,C083,Sony Headphones,Electronics,8999,3,2024-05-30,9
+36,C015,Running Shoes,Sports,5499,2,2024-09-14,16
+37,C039,Atomic Habits,Books,499,4,2024-07-22,11
+38,C057,Zara Jacket,Fashion,5999,3,2024-12-01,20
+39,C066,Air Fryer,Kitchen,7499,2,2024-04-09,8
+40,C072,Levi Jeans,Fashion,3499,5,2024-11-28,13

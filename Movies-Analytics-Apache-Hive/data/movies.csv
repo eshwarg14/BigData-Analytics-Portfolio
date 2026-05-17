@@ -1,0 +1,31 @@
+movie_id,title,genre,release_year,language,rating,budget_cr,revenue_cr
+1,RRR,Action,2022,Telugu,8.0,550,1200
+2,KGF Chapter 2,Action,2022,Kannada,8.2,100,1250
+3,Pushpa The Rise,Action,2021,Telugu,7.6,60,365
+4,Pathaan,Action,2023,Hindi,5.9,250,1050
+5,Jawan,Action,2023,Hindi,7.0,300,1150
+6,3 Idiots,Comedy,2009,Hindi,8.4,55,460
+7,Munna Bhai MBBS,Comedy,2003,Hindi,8.1,18,145
+8,Andaz Apna Apna,Comedy,1994,Hindi,8.0,4.5,12
+9,Dhamaal,Comedy,2007,Hindi,7.0,8,50
+10,Hera Pheri,Comedy,2000,Hindi,8.2,7,42
+11,Gangs of Wasseypur,Drama,2012,Hindi,8.2,7.5,15
+12,Taare Zameen Par,Drama,2007,Hindi,8.4,12,60
+13,Dil Chahta Hai,Drama,2001,Hindi,8.1,14,35
+14,Pink,Drama,2016,Hindi,8.1,12,40
+15,Article 15,Drama,2019,Hindi,8.1,30,150
+16,2001 A Space Odyssey,Sci-Fi,1968,English,8.3,3.5,6800
+17,Interstellar,Sci-Fi,2014,English,8.6,165,4800
+18,Blade Runner 2049,Sci-Fi,2017,English,8.0,185,260
+19,Arrival,Sci-Fi,2016,English,7.9,47,1200
+20,Gravity,Sci-Fi,2013,English,7.7,100,2300
+21,Baahubali The Beginning,Historical,2015,Telugu,8.0,180,590
+22,Baahubali The Conclusion,Historical,2017,Telugu,8.2,250,1810
+23,Padmaavat,Historical,2018,Hindi,7.0,215,585
+24,Jodhaa Akbar,Historical,2008,Hindi,7.5,40,120
+25,Mohenjo Daro,Historical,2016,Hindi,4.9,120,82
+26,Andhadhun,Thriller,2018,Hindi,8.2,32,460
+27,Drishyam,Thriller,2015,Hindi,8.2,12,45
+28,Kahaani,Thriller,2012,Hindi,8.1,8,100
+29,A Wednesday,Thriller,2008,Hindi,8.2,4,50
+30,Ratsasan,Thriller,2018,Tamil,8.5,5.5,650
