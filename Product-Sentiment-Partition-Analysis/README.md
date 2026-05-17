@@ -258,12 +258,9 @@ The two-reducer design doubles throughput for sentiment classification. For ente
 
 ---
 
-## 👥 Authors
+## Author
 
-| Name | Roll No | Program |
-|---|---|---|
-| **Eshwar G** | 2582420 | MSDA — 3rd Trimester |
-| **Shivani R** | — | MSDA — 3rd Trimester |
+**Eshwar G**
 
 ---
 
