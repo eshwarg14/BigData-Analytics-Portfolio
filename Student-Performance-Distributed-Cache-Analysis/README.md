@@ -295,12 +295,9 @@ hdfs dfs -cat /practice/DClass/output1/part-r-00000
 
 ---
 
-## 👥 Authors
+## Author
 
-| Name | Roll No | Program |
-|---|---|---|
-| **Eshwar G** | 2582420 | MSDA — 3rd Trimester |
-| **Shivani R** | — | MSDA — 3rd Trimester |
+**Eshwar G**
 
 ---
 
