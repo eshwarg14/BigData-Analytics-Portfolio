@@ -313,12 +313,9 @@ hdfs dfs -cat /assignment/Streaming/out/part-00000
 
 ---
 
-## 👥 Authors
+## Author
 
-| Name | Roll No | Program |
-|---|---|---|
-| **Eshwar G** | 2582420 | MSDA — 3rd Trimester |
-| **Shivani R** | — | MSDA — 3rd Trimester |
+**Eshwar G**
 
 ---
 
