@@ -359,12 +359,9 @@ The MapReduce model scales **linearly** — doubling cluster nodes roughly halve
 
 ---
 
-## 👥 Authors
+## Author
 
-| Name | Roll No | Program |
-|---|---|---|
-| **Eshwar G** | 2582420 | MSDA — 3rd Trimester |
-| **Shivani R** | — | MSDA — 3rd Trimester |
+**Eshwar G** 
 
 ---
 
