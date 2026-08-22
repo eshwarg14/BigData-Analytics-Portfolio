@@ -23,7 +23,7 @@ This repository contains **7 industry-style Big Data engineering projects** buil
 
 The projects progress from foundational MapReduce programming to advanced patterns including custom Partitioners, Distributed Cache joins, Python Hadoop Streaming, Apache Pig dataflows, and Apache Hive warehousing with Partitioning and Bucketing.
 
-> **Authors:** Eshwar G & Shivani R | MSDA Programme — 3rd Trimester
+> **Author:** Eshwar G
 
 ---
 
