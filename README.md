@@ -19,7 +19,7 @@
 
 ## 👨‍💻 About This Portfolio
 
-This repository contains **7 industry-style Big Data engineering projects** built on the **Apache Hadoop ecosystem**. Each project solves a real-world analytics problem using distributed computing techniques — from processing e-commerce product reviews at scale to querying movie datasets through a SQL-on-Hadoop warehouse.
+This repository contains **7 industry-style Big Data engineering projects** built on the **Apache Hadoop ecosystem**. Each project solves a real-world analytics problem using distributed computing techniques - from processing e-commerce product reviews at scale to querying movie datasets through a SQL-on-Hadoop warehouse.
 
 The projects progress from foundational MapReduce programming to advanced patterns including custom Partitioners, Distributed Cache joins, Python Hadoop Streaming, Apache Pig dataflows, and Apache Hive warehousing with Partitioning and Bucketing.
 
@@ -51,44 +51,44 @@ Apache Hadoop is an open-source framework for **distributed storage and processi
 
 | Component | Role |
 |---|---|
-| **HDFS** | Hadoop Distributed File System — stores data across multiple nodes with replication for fault tolerance |
-| **YARN** | Yet Another Resource Negotiator — manages cluster resources and job scheduling |
+| **HDFS** | Hadoop Distributed File System - stores data across multiple nodes with replication for fault tolerance |
+| **YARN** | Yet Another Resource Negotiator - manages cluster resources and job scheduling |
 | **MapReduce** | Distributed computation model: Map (transform) → Shuffle (sort+group) → Reduce (aggregate) |
 | **Common** | Utilities and libraries shared by all Hadoop modules |
 
 **Key Architecture Concepts:**
 
-- **NameNode** — Master node managing HDFS metadata and file namespace.
-- **DataNode** — Worker nodes storing actual data blocks (default block size: 128 MB).
-- **ResourceManager** — YARN master allocating CPU/memory across jobs.
-- **NodeManager** — Per-node YARN agent managing container lifecycle.
-- **SecondaryNameNode** — Periodically checkpoints the NameNode's edit log (not a backup NameNode).
+- **NameNode** - Master node managing HDFS metadata and file namespace.
+- **DataNode** - Worker nodes storing actual data blocks (default block size: 128 MB).
+- **ResourceManager** - YARN master allocating CPU/memory across jobs.
+- **NodeManager** - Per-node YARN agent managing container lifecycle.
+- **SecondaryNameNode** - Periodically checkpoints the NameNode's edit log (not a backup NameNode).
 
 ---
 
 ### 🔄 MapReduce
 
-MapReduce is the native computation engine of Hadoop — a two-phase distributed processing model:
+MapReduce is the native computation engine of Hadoop - a two-phase distributed processing model:
 
 ```
 INPUT DATA (HDFS)
       │
       ▼  TextInputFormat splits input into chunks
 ┌─────────────────────────────────────────────────┐
-│  MAP PHASE                                       │
-│  • Each mapper processes one input split         │
-│  • Applies user-defined map() function           │
-│  • Emits intermediate (Key, Value) pairs         │
+│  MAP PHASE                                      │
+│  • Each mapper processes one input split        │
+│  • Applies user-defined map() function          │
+│  • Emits intermediate (Key, Value) pairs        │
 └──────────────────────┬──────────────────────────┘
                        │
                        ▼  Shuffle & Sort
               (sorted by key, grouped)
                        │
 ┌──────────────────────▼──────────────────────────┐
-│  REDUCE PHASE                                    │
-│  • Each reducer receives all values for a key    │
-│  • Applies user-defined reduce() function        │
-│  • Emits final (Key, Value) output               │
+│  REDUCE PHASE                                   │
+│  • Each reducer receives all values for a key   │
+│  • Applies user-defined reduce() function       │
+│  • Emits final (Key, Value) output              │
 └──────────────────────┬──────────────────────────┘
                        │
                   OUTPUT (HDFS)
@@ -103,7 +103,7 @@ INPUT DATA (HDFS)
 | Custom Partitioner | Project 2 | Route keys to specific reducers |
 | Reduce-Side Join | Project 3 | Join two datasets at reducer |
 | Map-Side Join | Project 4 | Join via Distributed Cache at mapper |
-| Combiner | — | Local reducer to minimise shuffle traffic |
+| Combiner | - | Local reducer to minimise shuffle traffic |
 
 ---
 
@@ -120,7 +120,7 @@ hadoop jar hadoop-streaming.jar \
 ```
 
 **Benefits:**
-- 🐍 No Java required — use Python, Bash, Perl, R, etc.
+- 🐍 No Java required - use Python, Bash, Perl, R, etc.
 - ⚡ Faster prototyping and iteration cycles.
 - 🔧 Easy integration with existing data science scripts.
 - 📚 Familiar languages for analysts and data scientists.
@@ -129,7 +129,7 @@ hadoop jar hadoop-streaming.jar \
 
 ### 🐷 Apache Pig
 
-Apache Pig is a **dataflow scripting platform** for processing large datasets on Hadoop. It uses **Pig Latin** — a high-level, procedural language that compiles to MapReduce.
+Apache Pig is a **dataflow scripting platform** for processing large datasets on Hadoop. It uses **Pig Latin** - a high-level, procedural language that compiles to MapReduce.
 
 **Why Pig over raw MapReduce?**
 - 10× fewer lines of code for the same transformation.
@@ -177,7 +177,7 @@ HDFS (ORC / Parquet / TextFile)
 
 | Feature | Description | Benefit |
 |---|---|---|
-| **Partitioning** | Splits table into genre=X subdirectories | Partition pruning — skip irrelevant data |
+| **Partitioning** | Splits table into genre=X subdirectories | Partition pruning - skip irrelevant data |
 | **Bucketing** | Hash-splits data into N files per partition | Efficient JOIN + TABLESAMPLE |
 | **ORC Format** | Columnar, compressed binary format | 70–90% smaller than CSV, fast aggregations |
 | **Dynamic Partitioning** | Auto-route rows to correct partition | Simplifies bulk data loading |
@@ -193,7 +193,7 @@ Hadoop's **Distributed Cache** mechanism broadcasts a small file (e.g., a refere
 // Register file in Distributed Cache (Driver)
 job.addCacheFile(new URI("hdfs:///path/to/small_table.csv#alias.csv"));
 
-// Access in Mapper's setup() — already on local disk
+// Access in Mapper's setup() - already on local disk
 File cachedFile = new File("./alias.csv");
 BufferedReader reader = new BufferedReader(new FileReader(cachedFile));
 // Load into HashMap for O(1) lookups
@@ -220,7 +220,7 @@ Reducer → Sum counts per product
 Output  → Product-wise damage complaint frequency
 ```
 
-**Key Result:** JBL Flip 5 Bluetooth Speaker had 22 damage mentions — highest in the dataset, flagging a packaging quality issue.
+**Key Result:** JBL Flip 5 Bluetooth Speaker had 22 damage mentions - highest in the dataset, flagging a packaging quality issue.
 
 ---
 
@@ -283,7 +283,7 @@ mapper.py  → Parse log line → emit IP, URL, STATUS counts
 reducer.py → Aggregate → print 3-section analytics report
 ```
 
-**Key Result:** 35 successful (200), 4 server errors (500), 4 forbidden (403) — security alert warranted.
+**Key Result:** 35 successful (200), 4 server errors (500), 4 forbidden (403) - security alert warranted.
 
 ---
 
@@ -330,7 +330,7 @@ Queries: Pruning | Sampling | Aggregations | JOIN
 | Java | OpenJDK 17 | MapReduce development |
 | Python | 3.12 | Hadoop Streaming scripts |
 | Eclipse IDE | 2024-06 | Java development + JAR packaging |
-| Nano / Kate | — | Script editing on Linux |
+| Nano / Kate | - | Script editing on Linux |
 | Beeline | 4.0.1 | HiveServer2 CLI client |
 
 ---
@@ -380,7 +380,7 @@ Queries: Pruning | Sampling | Aggregations | JOIN
 # Java 17
 sudo apt install openjdk-17-jdk
 
-# Hadoop 3.4.1 — download from https://hadoop.apache.org/releases.html
+# Hadoop 3.4.1 - download from https://hadoop.apache.org/releases.html
 tar -xzf hadoop-3.4.1.tar.gz
 export HADOOP_HOME=/opt/hadoop-3.4.1
 export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
@@ -440,12 +440,12 @@ Start with **Project 1** for MapReduce fundamentals, then progress through join 
 
 ## 🔮 Future Extensions
 
-- ⚡ **Apache Spark** — Migrate batch jobs to in-memory processing (10–100× faster).
-- 🌊 **Apache Kafka** — Add real-time data ingestion for streaming analytics.
-- 📊 **Apache Zeppelin** — Interactive notebooks for Pig and HiveQL queries.
-- 🔍 **Elasticsearch + Kibana** — Search and visualise Hadoop outputs.
-- ☁️ **AWS EMR / GCP Dataproc** — Deploy projects on cloud-managed Hadoop clusters.
-- 🤖 **Apache Spark MLlib** — Machine learning on top of Hadoop datasets.
+- ⚡ **Apache Spark** - Migrate batch jobs to in-memory processing (10–100× faster).
+- 🌊 **Apache Kafka** - Add real-time data ingestion for streaming analytics.
+- 📊 **Apache Zeppelin** - Interactive notebooks for Pig and HiveQL queries.
+- 🔍 **Elasticsearch + Kibana** - Search and visualise Hadoop outputs.
+- ☁️ **AWS EMR / GCP Dataproc** - Deploy projects on cloud-managed Hadoop clusters.
+- 🤖 **Apache Spark MLlib** - Machine learning on top of Hadoop datasets.
 
 ---
 
